@@ -4,12 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Answer;
 use App\Commit;
-use App\Page;
 use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Http\Request;
-use App\Project;
 
 class AnswerController extends BaseController
 {
