@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrap{
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+}
+.wrap img{
+    float: left;
+}
+
+
+.mark{
+    position: absolute;
+}
+.mark-icon{
+    border: 1px solid #666666;
+    padding: 10px 11px;
+    line-height: 10px;
+    color: #ffffff;
+    display: block;
+    background: #999999;
+    border-radius: 50%;
+    z-index: 10;
+    position: relative;
+}
+
+.mark .form{
+    position: absolute;
+    margin-left: 20px;
+    margin-top: -10px;
+    background: #ffffff;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    max-width: 300px;
+    min-width: 240px;
+    border: 1px solid #999999;
+}
+.mark-icon.hider ~ .form{
+    display: none;
+    transition: all 1s;
+}
+.mark-icon.hider:hover ~ .form{
+    display: block;
+
+}
+.mark-icon.hider:hover{
+    border: 1px solid red;
+}
+.mark-icon.red{
+    border: 1px solid red
+}
+.form .input{
+    box-sizing: border-box;
+    display: block;
+    border: 1px solid #cccccc;
+    font-size:16px;
+    padding: 5px;
+    width: 100%;
+    resize: none;
+}
+.hide-block{
+    display: none;
+}
